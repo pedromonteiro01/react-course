@@ -3,9 +3,13 @@ import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
 
+  const addExpenseHandler = expense => {
+    console.log(expense);
+  }
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses></Expenses>
     </div>
   );
