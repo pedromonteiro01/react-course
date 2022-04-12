@@ -21,6 +21,7 @@ const Expenses = (props) => {
         />
         {props.items.map((expense) => (
           <ExpenseItem
+            key={expense.id} //can be added to any component
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
